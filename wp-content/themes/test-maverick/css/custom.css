@@ -1,0 +1,221 @@
+#primary-menu a{
+	color: white;
+	font-size: 36px;
+	font-family: 'Impact';
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+#primary-menu  li{
+	float: none;
+    margin-bottom: 20px;
+    text-align: right;
+	padding-right: 45px;
+	list-style-type: none;
+}
+
+#site-navigation{
+	text-align: right;
+	padding-right: 20px;
+}
+
+.menu_icon{
+	font-size: 36px;
+	color: white;
+	margin-right: 20px;
+}
+
+.menu_icon_text{
+	font-size: 20px;
+	color: white;
+}
+
+.menu_icon_block{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 10px;
+}
+
+#true_loadmore{
+	background-color: #ddd; /* сервый фон */
+    	border-radius: 2px; /* закругление углов */
+    	display: block; /* блочный элемент, на случай, если захотите использовать <a> */
+    	text-align: center; /* выравнивание текста по центру */
+    	font-size: 14px; font-size: 0.875rem; /* размер шрифта */
+    	font-weight: 800; /* начертание */
+    	letter-spacing: 1px; /* межбуквенный интервал */
+    	cursor: pointer; /* курсор мыши при наведении такой же, как при наведении на ссылку */
+    	text-transform: uppercase;
+    	padding: 10px 0; /* внутренние отступы сверху и снизу у кнопки */
+    	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out; /* CSS-анимация*/
+}
+#true_loadmore:hover{
+	background-color: #767676;
+	color: #fff;
+}
+
+.all_posts{
+	width: 100%;
+}
+
+.loadmore{
+	width: 200px;
+    background: transparent;
+    border: 2px solid #ECBB45;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+.loadmore:hover{
+	color: white;
+	background: #ECBB45;
+	cursor: pointer;
+}
+
+.paginator.active{
+	color: grey;
+}
+
+.paginator{
+	padding: 10px 20px;
+	border: 2px solid;
+	text-decoration: none;
+}
+
+.entry-title{
+	text-align: center;
+}
+
+.custom_form{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.custom_form .form-controll{
+	width: 45%;
+	margin: 10px;
+}
+
+.custom_form label{
+	font-weight: bold;
+	font-size: 16px;
+	color: #005165;
+	margin-bottom: 10px;
+}
+
+.custom_form input,textarea{
+	border:none;
+	font-size: 16px;
+	color: #ECBB45;
+	font-weight: bold;
+	border: 2px solid #005165;
+	background: transparent;
+	width: 100%;
+	padding: 10px;
+}
+
+.submit_form_btn{
+	width: 200px;
+	background: #005165!important;
+    border: 2px solid #ECBB45;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+	display: block;
+	cursor: pointer;
+	border:none;
+}
+
+.submit_form_btn:hover{
+	color: white;
+	background: transparent;
+	cursor: pointer;
+}
+
+
+
+.form-style {
+    padding: 30px 0;
+    background-color: #fff;
+    position: relative;
+    min-height: 400px;
+}
+
+ .form-is-sending {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility .3s;
+    }
+
+    .form-style  .form-is-more {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility .3s;
+    }
+
+    .is-sending .form-view{
+            opacity: 0;
+            visibility: hidden;
+	}
+		
+	.is-sending  .form-is-sending {
+            opacity: 1;
+            visibility: visible;
+    }
+
+    .form-style.is-sending.is-sending-complete .form-view{
+            opacity: 0;
+            visibility: hidden;
+	}
+	
+    .form-style.is-sending.is-sending-complete  .form-is-more {
+            opacity: 1;
+            visibility: visible;
+    }
+
+
+
+.pa-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    margin: -25px 0 0 -25px;
+    border: 3px solid #ebebeb;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: cssload-spin 1325ms infinite linear;
+}
+
+.custom_form .form-controll .empty-field{
+	border: 2px solid red;
+}
+
+.erorr-message{
+	color: red;
+}
+
+.success-message{
+	color: green;
+	font-weight: bold;
+}
